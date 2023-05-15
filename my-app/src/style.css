@@ -1,0 +1,562 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.search-login {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pet-list-img img {
+  width: 229px;
+  height: 170px;
+  border-radius: 33px;
+}
+
+.pet-list-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+  margin: 1rem 2rem;
+  display: flex;
+}
+
+#pet-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pat-list-data {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.adop-stat {
+  color: #e97f01;
+}
+
+.pet-list-button {
+  border: none;
+  background-color: white;
+}
+
+.header {
+  background-color: #e97f01;
+  width: 100%;
+  height: 67px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-title {
+  display: flex;
+  flex-basis: 35%;
+  cursor: pointer;
+}
+
+.user-details-header {
+  display: flex;
+  flex-basis: 65%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.user-name-logo {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+  flex-basis: 40%;
+}
+
+.user-logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.current-user {
+  padding-top: 17px;
+  width: 100%;
+  margin-left: 9px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+}
+
+.logout-svg {
+  padding-bottom: 34px;
+}
+
+.paw {
+  margin-top: 14px;
+  margin-left: 9px;
+}
+.title {
+  padding-left: 3%;
+  padding-top: 9px;
+}
+
+.a {
+  color: white;
+  font-weight: bold;
+}
+
+.welcom-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 6rem;
+}
+.title-greet {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-greet h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.hello {
+  color: #e97f01;
+}
+
+.signup-activate {
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #e97f01;
+  color: white;
+  border: none;
+  height: 67px;
+  width: 164px;
+  border-radius: 56px;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.account {
+  font-size: 1.4rem;
+}
+.signup-activate {
+  color: #e97f01;
+  font-weight: 600;
+}
+
+.search {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+}
+
+.friend {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e97f01;
+}
+
+.search-link {
+  text-decoration: none;
+}
+
+.user-prop {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 17px;
+  width: 100%;
+  margin-left: 9px;
+}
+
+.small-logo {
+  margin-top: 16px;
+}
+
+.petCard {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+}
+
+.pet-page {
+  display: flex;
+}
+
+.edit-pet {
+  flex-basis: 60%;
+  width: 100%;
+}
+
+.allDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.photoStatus {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pet-photo {
+  width: 30%;
+  position: relative;
+}
+
+.pet-status {
+  position: absolute;
+  left: 30%;
+  top: 12%;
+  transform: rotate(0.95turn);
+  background-color: #f2efef;
+  padding: 7px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #e97f01;
+}
+
+.like-button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: #f08f66;
+}
+
+.name-logoPet {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.svg {
+  padding: 8px;
+}
+.pet-name {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.bhw {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bhw p {
+  background-color: #f2efef;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.cbdh {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  font-size: 1.3rem;
+}
+
+.pet-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.pet-buttons button {
+  background-color: #e97f01;
+  color: white;
+  border: none;
+  height: 67px;
+  width: 164px;
+  border-radius: 56px;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.pet-buttons button:disabled {
+  background-color: #9a8975;
+}
+
+.return-button {
+  border: none;
+  background-color: white;
+  padding-top: 8px;
+  width: 100%;
+}
+
+.basic-search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-item {
+  background-color: #dfdada;
+  border-radius: 33px;
+  border: none;
+  width: 50%;
+  margin-bottom: 1.5rem;
+  padding: 5px 3px 3px 18px;
+}
+
+.advanced-search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-button {
+  border: none;
+  background-color: #e97f01;
+  border-radius: 56px;
+  color: white;
+  font-weight: 600;
+  width: 10%;
+  margin-bottom: 15px;
+  height: 40px;
+  font-size: 1.3rem;
+}
+
+.user-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 10px;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.users {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.user-detail:hover {
+  background-color: #f9d9b3;
+}
+.Uname {
+  flex-basis: 20%;
+}
+.Uemail {
+  flex-basis: 22%;
+}
+.Uphone {
+  flex-basis: 18%;
+}
+.Uadmin {
+  flex-basis: 10%;
+}
+
+.Ubutton-pets {
+  flex-basis: 22%;
+  border: none;
+  background-color: #e97f01;
+  border-radius: 56px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  font-size: 1.3rem;
+}
+
+.Ubutton-pets:disabled {
+  background-color: #9a8975;
+}
+.admin-page {
+  display: flex;
+}
+
+.users {
+  flex-basis: 60%;
+  border: 2px solid black;
+  background-color: #f2efef;
+}
+
+.admin-pets {
+  flex-basis: 40%;
+  border: 2px solid black;
+  background-color: #f2efef;
+}
+
+.admin-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.admin-buttons button {
+  border: none;
+  background-color: #e97f01;
+  border-radius: 56px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  font-size: 1.3rem;
+  width: 12%;
+  margin: 16px;
+}
+
+.add-pet {
+  border: none;
+  background-color: #e97f01;
+  border-radius: 56px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  font-size: 1.3rem;
+  width: 12%;
+  margin: 16px;
+}
+
+.add-pet Link {
+  text-decoration: none;
+}
+
+.add-pet-button {
+  border: none;
+  background-color: #e97f01;
+  border-radius: 56px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  width: 20%;
+  margin: 16px;
+}
+
+.add-pet-form {
+  width: 50%;
+  margin-left: 25px;
+}
+
+.add-pet-form * {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+#hypo-check {
+  accent-color: #e97f01;
+}
+
+#hypo {
+  margin-left: 15px;
+}
+
+.users-pets {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  margin: 15px;
+}
+
+.users-pets-status {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.users-pets-id {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.users-pets-date {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-button {
+  border: none;
+  background-color: white;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  background-color: #f9f6f6;
+  border-radius: 20px;
+}
+
+.signup-input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #f9f6f6;
+}
+
+.signup-button {
+  border: none;
+  background-color: #e97f01;
+  border-radius: 56px;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  width: 40%;
+  margin: 16px;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  background-color: #f9f6f6;
+  border-radius: 20px;
+}
+
+.no-list {
+  font-size: 1.5rem;
+}
+
+.my-pets {
+  margin: 42px;
+}
+
+h3 {
+  border-top: #bbb5ae 1px solid;
+  color: #e97f01;
+  font-weight: 600;
+}
