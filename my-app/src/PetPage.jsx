@@ -36,7 +36,7 @@ export default function PetPage() {
         `http://localhost:8080/pets/${params.petId}`,
         { withCredentials: true }
       );
-
+      console.log("vookie", res.data);
       setPetDetails(res.data[0]);
     } catch (err) {
       console.log(err);

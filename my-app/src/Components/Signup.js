@@ -6,14 +6,18 @@ import { usePetsContext } from "./PetsContext";
 const refresh = () => window.location.reload(true);
 
 export default function Signup({ setSignupModal, setLoginModal }) {
-  const { currentName, logedUserDetails, checkToken } = usePetsContext();
+  const { currentName, logedUserDetails, checkToken, getUserDetails } =
+    usePetsContext();
 
   useEffect(() => {
     checkToken();
+    getUserDetails();
   }, []);
 
   const usDet = logedUserDetails[0];
   console.log("eden", usDet);
+  const [signupErr, setSignupErr] = useState(null);
+
   const [signupInfo, setSignupInfo] = useState({
     email: usDet?.email || "",
     password: "",
@@ -33,35 +37,45 @@ export default function Signup({ setSignupModal, setLoginModal }) {
   };
 
   const sendSignUserBack = async () => {
-    if (logedUserDetails) {
-      try {
-        const res = await axios.put(
-          `http://localhost:8080/users/update/${logedUserDetails[0].userId}`,
-          signupInfo
-        );
-        console.log(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    } else
-      try {
-        const res = await axios.post(
-          "http://localhost:8080/users/signup",
-          signupInfo
-        );
-        console.log(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    refresh();
+    // if (logedUserDetails) {
+    //   try {
+    //     const res = await axios.put(
+    //       `http://localhost:8080/users/update/${logedUserDetails[0].userId}`,
+    //       signupInfo
+    //     );
+    //     console.log(res.data);
+    //   } catch (err) {
+    //     console.log(err);
+    //   }
+    // } else
+    try {
+      const res = await axios.post(
+        "http://localhost:8080/users/signup",
+        signupInfo
+      );
+      console.log(res.data);
+      setSignupErr("ok");
+    } catch (err) {
+      console.log(err);
+      setSignupErr(err.response.data);
+    }
+    // refresh();
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     sendSignUserBack();
-    setSignupModal(false);
-    setLoginModal(true);
   };
+
+  useEffect(() => {
+    if (signupErr !== "ok") {
+      return;
+    } else {
+      // Continue with the desired actions
+      setSignupModal(false);
+      setLoginModal(true);
+    }
+  }, [signupErr]);
 
   return (
     <>
@@ -127,6 +141,7 @@ export default function Signup({ setSignupModal, setLoginModal }) {
             </button>
           )}
         </form>
+        <p>{signupErr}</p>
       </div>
     </>
   );

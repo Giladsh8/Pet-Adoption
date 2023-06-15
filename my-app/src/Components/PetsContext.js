@@ -227,6 +227,7 @@ export default function PetsContextProvider({ children }) {
         logedUserDetails,
         getUserDetails,
         checkToken,
+        getUserDetails,
       }}
     >
       {children}

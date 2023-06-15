@@ -138,6 +138,9 @@ export default function Header() {
                 </g>
               </svg>
             </div>
+            <div>
+              <Link to="/search">Search A freind</Link>
+            </div>
           </>
         )}
       </div>
